@@ -1,0 +1,39 @@
+.genres {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0;
+  margin: 10px 0 0;
+}
+.genres li {
+  list-style: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #000;
+}
+.genres li[data-genre=Action] { background: rgb(182, 21, 21);}
+.genres li[data-genre=Drama] { background: rgb(70, 174, 13);}
+.genres li[data-genre=Thriller] { background: rgb(12, 85, 194); }
+.genres li[data-genre=Sport] { background: rgb(68, 141, 219); }
+.genres li[data-genre=Crime] { background: rgb(124, 12, 194); }
+.genres li[data-genre=Documentary] { background: rgb(11, 154, 59); }
+.genres li[data-genre=Music] { background: rgb(254, 199, 17); }
+.genres li[data-genre=History] { background: rgb(17, 199, 254); }
+.genres li[data-genre=War] { background: rgb(29, 29, 29); }
+.genres li[data-genre=Comedy] { background: rgb(78, 36, 82); }
+.genres li[data-genre=Horror] { background: rgb(83, 12, 14); }
+.genres li[data-genre=Mystery] { background: rgb(42, 42, 42); }
+.genres li[data-genre=Animation] { background: rgb(250, 200, 33); }
+.genres li[data-genre=Family] { background: rgb(252, 106, 38); }
+.genres li[data-genre=Musical] { background: rgb(33, 183, 50); }
+.genres li[data-genre=Fantasy] { background: rgb(168, 28, 202); }
+.genres li[data-genre=Romance] { background: rgb(252, 38, 159); }
+
+/* 
+<ul className='genres'>
+{ genres.map(genre => (
+  <li key={genre} data-genre={ genre }>#{ genre }</li>
+))}
+</ul> */

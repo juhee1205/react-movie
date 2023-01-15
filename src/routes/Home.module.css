@@ -1,0 +1,37 @@
+.wrap {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 0 100px;
+  background-color: aliceblue;
+}
+
+
+.container {
+  padding-top: 50px;
+}
+.container h1 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.searchBox {
+  width: 1500px;
+  margin: 30px auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #9bd;
+}
+
+p.count {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}

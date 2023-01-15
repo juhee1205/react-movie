@@ -1,0 +1,33 @@
+.loadingBox {
+  position: fixed;
+  left: calc(50% - 30px);
+  top: calc(50% - 20px);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+  height: 50px;
+}
+.loadingBox span {
+  width: 3px;
+  height: 40px;
+  background-color: #00000055;
+}
+.loadingBox span:nth-child(1) {
+  animation: loading infinite 0.8s ease-in-out;
+}
+.loadingBox span:nth-child(2) {
+  animation: loading infinite 0.8s 0.1s ease-in-out;
+}
+.loadingBox span:nth-child(3) {
+  animation: loading infinite 0.8s 0.2s ease-in-out;
+}
+.loadingBox span:nth-child(4) {
+  animation: loading infinite 0.8s 0.3s ease-in-out;
+}
+@keyframes loading {
+  0% { transform: scale(1)}
+  50% { transform: scale(1, 1.6); background: #448ddb;}
+  100% { transform: scale(1);}
+}

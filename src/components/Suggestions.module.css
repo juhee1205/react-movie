@@ -1,0 +1,49 @@
+
+.suggestions {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  color:#fff;
+}
+
+.suggestions h2 {
+  margin-bottom:30px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.suggestions .suggestionsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+
+}
+
+.suggestions .movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width:calc((100% - 60px) / 4)
+}
+.suggestions .poster {
+  width: 150px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  font-size: 0;
+}
+.suggestions .title {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.suggestions .contents {
+ width: calc(100% - 160px);
+}
+.suggestions .title {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.suggestions .summary {
+  font-size: 12px;
+}

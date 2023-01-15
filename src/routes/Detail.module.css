@@ -1,0 +1,88 @@
+.wrap {
+  background-color: #000;
+
+}
+.detail {
+  position: relative;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+.bg::after {
+  position: absolute;
+  left:0; 
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient( #00000011, #000 95%);
+  content: '';
+}
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.detail .contents {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+
+}
+.infoBox {
+  width: 600px;
+  text-align: left;
+  color: #fff;
+}
+.infoBox h1 {
+  padding-top: 30px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.infoBox .desc {
+  margin-bottom: 60px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.detail .poster {
+  width: 400px;
+  border: 10px solid #fff;
+  box-shadow: 0 0 20px 3px rgba(0,0,0,0.5);
+  font-size: 0;
+}
+
+.poster img {
+  width: 100%;
+}
+
+.otherInfo {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  margin-top: 30px;
+  font-size: 15px
+}
+.otherInfo dl {
+  display: flex;
+}
+.otherInfo dt {
+  padding: 0 10px;
+  color: #ddd;
+}
+
+.otherInfo dd {
+  padding-right: 40px;
+  font-weight: 700;
+}
